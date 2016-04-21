@@ -1,0 +1,24 @@
+td, th {
+  vertical-align: top;
+  text-align: left;
+  padding: 2px 5px;
+}
+form tr td:first-child {
+  font-weight: bold;
+  width: 10px;
+  white-space: nowrap;
+}
+form table {
+  width: 100%;
+}
+form td {
+  padding: 0 10px 10px 0;
+}
+form tr td:nth-child(2) {
+  width: 100%;
+}
+form td input[type='text'],
+form td input[type='password']
+{
+  width: 80%;
+}

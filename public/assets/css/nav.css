@@ -1,0 +1,181 @@
+/* nav.css
+   @author: Dr. Robert Kline
+
+The code is presented in three groups:
+  top: colors + sizes
+  middle: structural
+  bottom: rule changes based on browser width
+
+The most obvious features to set are listed in the first group.
+You have to change all rules for a particular style property.
+
+The other important feature to change is when the vertical menu "kicks in."
+This is done in the bottom section changing the "max-width" in two places.
+
+The middle group primarily gives the structural features, and should 
+probably not be altered.
+*/
+
+/* background color */
+nav {
+  background-color: #f0f1f2;
+}
+nav ul li {
+  background-color: #f0f1f2;
+}
+nav a {
+  background-color: #f0f1f2;
+}
+
+/* link color */
+nav a {
+  color: #000;  
+}
+
+/* link hover changes */
+nav a:hover {
+  color: #c00;
+}
+nav a:hover:not(.arrow) {
+  background-color: #fff;
+}
+
+/* sizes */
+nav {
+  height: 22px;  
+}
+nav a {
+  height: 22px;
+  line-height: 22px;  /* set value same as height */
+  font-size: 12px;
+}
+
+/* drop-down shadow */
+nav > ul ul {
+  box-shadow: 3px 3px 3px #dde;
+}
+
+/* general border color */
+nav {
+  border-color: #000;  
+}
+nav a {
+  border-color: #000;  
+}
+nav > ul ul {
+  border-color: #000;  
+}
+
+/* --------------------------------------- */
+
+nav {
+  position:relative;
+  border-style: solid;
+  border-width: 1px 1px 1px 0;
+}
+nav * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav a {
+  padding: 0 7px;
+  display: block;
+  white-space: nowrap;
+  text-decoration: none;
+  border-style: solid;
+  border-width: 0 0 0 1px;
+}
+nav li {
+  position: relative;
+}
+nav > ul li:hover > ul {
+  display: block;
+}
+nav > ul ul {
+  position: absolute;
+  display: none;
+  left: 0;
+  z-index: 99;
+  border-style: solid;
+  border-width: 1px 1px 1px 0;
+}
+nav > ul > li {
+  display: table-cell;
+}
+nav li.arrow {
+  padding-right: 5px;
+}
+nav li.arrow > a {
+  padding-right: 12px;
+  background-image: url('nav_img/down-triangle.png');
+  background-size: 7px;
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+nav > ul li {
+  border-top: solid black 1px;
+}
+nav > ul li:first-child {
+  border-top: none;
+}
+nav li.no-action > a {
+  pointer-events: none;
+}
+nav ul ul ul {
+  border-left-width: 2px;
+  border-color: transparent;
+}
+nav ul ul ul li {
+  border: solid 1px black;
+  border-left-width: 0;
+  border-top-width: 0;
+}
+nav ul ul ul li:first-child {
+  border-top: solid 1px black;
+}
+nav ul ul ul ul {
+  top: 0;
+  left: 100%;
+}
+nav ul ul ul li.arrow > a {
+  background-image: url('nav_img/right-triangle.png');
+}
+nav > ul > li > ul > li > ul {
+  border-top-color: transparent;
+  border-top-width: 2px;
+}
+
+/* ------------------------------------- */
+
+@media (min-width: 460px) {
+  /* if wide enough, kick in horizontal menu */
+  nav > ul, nav > ul > li, nav > ul > li > ul {
+    display: block;
+  }
+  nav > ul > li > ul > li {
+    display: table-cell;
+    border-top: none;
+  }
+  nav > ul > li > ul {
+    border-top: none;
+  }
+  nav > ul > li > a { display: none; }
+  nav > ul > li > ul {
+    box-shadow: none;
+  }
+}
+@media (max-width: 460px) {
+  /* if not wide enough, kick in vertical menu */
+  nav ul ul ul {
+    top: 0;
+    left: 100%;
+  }
+  nav li.arrow > a {
+    background-image: url('nav_img/right-triangle.png');
+  }
+  nav img.menu {
+    height:11px;
+    margin-top:6px;
+  }
+} 

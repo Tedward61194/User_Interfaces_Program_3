@@ -1,0 +1,62 @@
+article, section, aside, hgroup, nav, header, footer, figure, figcaption, main {
+  display: block;
+}
+form {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 5px;
+  background-color: white;
+  font-family: "Helvetica Nueue", arial, sans-serif;
+  font-size: 14px;
+  background: #ccc;
+}
+
+main {
+  max-width: 775px;
+  min-width: 260px;
+  margin: 0 auto; /* auto: centers container */
+}
+
+header {
+  /* gradient CSS */
+  background-image: -moz-linear-gradient(top,#4c3759,#4c90dc);
+  background-image: -webkit-linear-gradient(top,#4c3759,#4c90dc);
+  background-image: -ms-linear-gradient(top,#4c3759,#4c90dc);
+  background-image: -o-linear-gradient(top,#4c3759,#4c90dc);
+  filter: progid:DXImageTransform.Microsoft.gradient(
+    startColorstr=#4c3759,endColorstr=#4c90dc);
+  background-repeat: no-repeat;
+  /* ----------------------------- */
+
+  line-height: 0;
+  border-radius: 8px 8px 0 0;
+  position: relative;
+}
+
+header img {
+  border-radius: 8px 8px 0 0;
+  width: 100%;
+}
+
+header span.caption {
+  position: absolute;
+  bottom: 10px;
+  right: 5px;
+  color: white;
+}
+
+section {
+  clear: left;
+  line-height: 1.4;
+  position: relative;
+  min-height: 400px;
+  overflow: auto;
+  padding: 0px 10px 10px 10px;
+  border: solid 1px black;
+  border-top-width: 0;
+  border-radius: 0 0 8px 8px;
+  background: #fff;
+}
