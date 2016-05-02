@@ -7,12 +7,6 @@ class Controller_Authenticate extends Controller_Base {
       return Response::redirect("/");
     }
     $data = array(
-      /* For name, we want to pass it down from here
-       * rather than retrieve it as a flash variable in
-       * the Smarty template.
-       * 
-       * The reason is that username needs to be "escaped"
-       */
       'name' => Session::get_flash('name'),
     );
     return View::forge("authenticate/login.tpl", $data);

@@ -240,3 +240,145 @@ WARNING - 2016-04-21 12:52:26 --> Fuel\Core\Fuel::init - The configured locale e
 WARNING - 2016-04-21 12:52:26 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
 WARNING - 2016-04-21 12:52:28 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
 WARNING - 2016-04-21 12:52:28 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 13:04:29 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 13:04:31 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 13:04:37 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 13:04:38 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 13:10:19 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 13:11:40 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 13:11:42 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 13:48:12 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 13:48:13 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 13:48:15 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 13:48:17 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 13:48:17 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 13:48:22 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 13:48:24 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 13:48:26 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 13:48:28 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 13:48:30 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 13:48:31 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 13:48:31 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 14:00:41 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 14:01:06 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 14:01:07 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 14:01:11 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 14:04:06 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 14:11:58 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 14:12:00 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+ERROR - 2016-04-21 14:12:01 --> Error - Syntax error in template "file:/home/teddy/NetBeansProjects/FuelFlowerShop/fuel/app/views/home/showFlower.tpl"  on line 40 "<input type="text" name="num" value="{$num|defalut}" />" unknown modifier "defalut" in /home/teddy/NetBeansProjects/FuelFlowerShop/fuel/vendor/smarty/smarty/libs/sysplugins/smarty_internal_templatecompilerbase.php on line 40
+WARNING - 2016-04-21 14:14:05 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 14:14:06 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+ERROR - 2016-04-21 14:14:06 --> Notice - Undefined index: validator in /home/teddy/NetBeansProjects/FuelFlowerShop/fuel/app/tmp/Smarty/templates_c/d8c07a2251a9cc5b4c15af6c57556e90fefaa36f_0.file.showFlower.tpl.php on line 102
+WARNING - 2016-04-21 14:14:43 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 14:14:44 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+ERROR - 2016-04-21 14:14:44 --> Notice - Undefined index: validator in /home/teddy/NetBeansProjects/FuelFlowerShop/fuel/app/tmp/Smarty/templates_c/d8c07a2251a9cc5b4c15af6c57556e90fefaa36f_0.file.showFlower.tpl.php on line 102
+WARNING - 2016-04-21 14:23:51 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 14:23:53 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 14:23:58 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 14:29:18 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 14:29:19 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 14:29:22 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 14:29:46 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 14:29:47 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+ERROR - 2016-04-21 14:29:47 --> Error - Syntax error in template "file:/home/teddy/NetBeansProjects/FuelFlowerShop/fuel/app/views/home/showFlower.tpl"  on line 38 "{form attrs=['action' => '/show/flowerReentrant/{$flower->id'}]}"  - Unexpected "}", expected one of: "","" , "]" in /home/teddy/NetBeansProjects/FuelFlowerShop/fuel/vendor/smarty/smarty/libs/sysplugins/smarty_internal_templatecompilerbase.php on line 38
+WARNING - 2016-04-21 14:30:10 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 14:30:11 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 14:30:14 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 14:36:46 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 14:36:47 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+ERROR - 2016-04-21 14:36:47 --> Parsing Error - syntax error, unexpected 'Flower' (T_STRING) in /home/teddy/NetBeansProjects/FuelFlowerShop/fuel/app/classes/controller/show.php on line 22
+WARNING - 2016-04-21 14:37:40 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 14:37:41 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 14:37:45 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 14:39:47 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 14:39:48 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 14:39:51 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 14:39:56 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 14:39:59 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 14:40:04 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 14:42:36 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 14:42:38 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 14:42:41 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+ERROR - 2016-04-21 14:42:41 --> Notice - Trying to get property of non-object in /home/teddy/NetBeansProjects/FuelFlowerShop/fuel/app/tmp/Smarty/templates_c/da62ad067e9eb07381ffa60d644d86fa1e375f5b_0.file.showFlowerReentrant.tpl.php on line 80
+WARNING - 2016-04-21 14:43:46 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 14:43:47 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 14:43:50 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+ERROR - 2016-04-21 14:43:50 --> Notice - Trying to get property of non-object in /home/teddy/NetBeansProjects/FuelFlowerShop/fuel/app/tmp/Smarty/templates_c/da62ad067e9eb07381ffa60d644d86fa1e375f5b_0.file.showFlowerReentrant.tpl.php on line 80
+WARNING - 2016-04-21 14:56:46 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 15:07:21 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 15:07:24 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 15:07:27 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+ERROR - 2016-04-21 15:07:27 --> Notice - Trying to get property of non-object in /home/teddy/NetBeansProjects/FuelFlowerShop/fuel/app/tmp/Smarty/templates_c/da62ad067e9eb07381ffa60d644d86fa1e375f5b_0.file.showFlowerReentrant.tpl.php on line 80
+WARNING - 2016-04-21 15:07:36 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 15:07:37 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 15:07:40 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 15:07:40 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 15:07:41 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 15:07:41 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 15:16:43 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 15:16:45 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 15:16:48 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 15:17:05 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 15:17:08 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 15:17:40 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 15:17:41 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 15:17:43 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 15:18:21 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 15:18:24 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 15:19:05 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 15:19:06 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 15:19:08 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 15:20:50 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 15:20:51 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 15:20:54 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 15:21:12 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 15:21:14 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 15:21:15 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 15:21:23 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 15:21:25 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 15:21:26 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 15:21:28 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 15:21:29 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 15:21:30 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 15:29:17 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 15:29:18 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+ERROR - 2016-04-21 15:29:18 --> Notice - Undefined variable: flowerr_id in /home/teddy/NetBeansProjects/FuelFlowerShop/fuel/app/classes/controller/show.php on line 16
+WARNING - 2016-04-21 15:29:54 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 15:29:55 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 15:29:56 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 15:29:59 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 15:30:00 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 15:30:47 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 15:30:48 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 15:30:49 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 15:32:09 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 15:32:11 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 15:32:13 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 16:00:04 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 16:00:05 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 16:00:06 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+ERROR - 2016-04-21 16:00:06 --> Notice - Undefined index: flower_id in /home/teddy/NetBeansProjects/FuelFlowerShop/fuel/app/tmp/Smarty/templates_c/da62ad067e9eb07381ffa60d644d86fa1e375f5b_0.file.showFlowerReentrant.tpl.php on line 97
+WARNING - 2016-04-21 16:00:42 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 16:00:43 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 16:00:46 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+ERROR - 2016-04-21 16:00:46 --> Notice - Undefined index: flower_id in /home/teddy/NetBeansProjects/FuelFlowerShop/fuel/app/tmp/Smarty/templates_c/da62ad067e9eb07381ffa60d644d86fa1e375f5b_0.file.showFlowerReentrant.tpl.php on line 97
+WARNING - 2016-04-21 16:03:36 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 16:03:38 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 16:03:39 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 16:03:42 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 16:03:44 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 16:03:47 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 16:04:14 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 16:04:15 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 16:04:17 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 16:04:42 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 16:04:43 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 16:04:46 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 16:04:50 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 16:23:53 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 16:23:55 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+ERROR - 2016-04-21 16:23:55 --> Fatal Error - Call to undefined function isnull() in /home/teddy/NetBeansProjects/FuelFlowerShop/fuel/app/classes/controller/show.php on line 36
+WARNING - 2016-04-21 16:24:38 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+WARNING - 2016-04-21 16:24:40 --> Fuel\Core\Fuel::init - The configured locale en_US is not installed on your system.
+ERROR - 2016-04-21 16:24:40 --> Fatal Error - Call to undefined function isnull() in /home/teddy/NetBeansProjects/FuelFlowerShop/fuel/app/classes/controller/show.php on line 36
