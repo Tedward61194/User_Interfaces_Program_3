@@ -19,7 +19,6 @@ class Controller_Show extends Controller_Base {
             ->add_rule('required')
             ->add_rule('valid_string', ['numeric'])
     ;
-    
     $doit = Input::post('doit');
     $clear = Input::post('clear');
     $message = '';
@@ -54,9 +53,23 @@ class Controller_Show extends Controller_Base {
   }
 
   public function action_cart() {
+    //if (!(Session::get('member'))) {
+    //    Response::redirect("/authenticate/login");
+    //}
     $cart_data = Session::get('cart');
+    $flowers = Model_Flower::find('all');
+    /*foreach($the_cart as $this_flower) {
+        $flower = Model_Flower::find($this_flower->id);
+        $cart_data[$this_flower->id] = [
+            'id' => $flower ->id,
+            ''
+        ]
+    }*/
+    
+    
     $data = [
         'cart_data' => $cart_data,
+        'flowers' => $flowers,
     ];
 
     return View::forge('home/cart.tpl', $data);
