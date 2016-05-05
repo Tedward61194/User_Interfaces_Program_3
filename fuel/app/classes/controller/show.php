@@ -40,6 +40,8 @@ class Controller_Show extends Controller_Base {
     if (!is_null($clear)) {
         Response::redirect("/show/cart");
         //remove flower from cart
+    } else {
+        $cart_data[$flower_id] = 0;
     }
     $data = [
         'flower_id' => $flower_id,
@@ -58,20 +60,22 @@ class Controller_Show extends Controller_Base {
     //}
     $cart_data = Session::get('cart');
     $flowers = Model_Flower::find('all');
-    /*foreach($the_cart as $this_flower) {
-        $flower = Model_Flower::find($this_flower->id);
-        $cart_data[$this_flower->id] = [
-            'id' => $flower ->id,
-            ''
-        ]
-    }*/
-    
-    
     $data = [
         'cart_data' => $cart_data,
         'flowers' => $flowers,
     ];
-
+    
+    if (isset($_POST['myOrders'])) {
+        Response::redirect("/member/placeOrder");
+        
+    }
     return View::forge('home/cart.tpl', $data);
+  }
+  
+  public function action_item() {
+      $data = [
+          
+      ];
+      return View::forge('home/item.tpl', $data);
   }
 }

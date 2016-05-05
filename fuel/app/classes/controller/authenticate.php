@@ -24,12 +24,12 @@ class Controller_Authenticate extends Controller_Base {
       return Response::redirect('/authenticate/login');
     }
     elseif (hash('sha256', $password) === $member->password) {
-      $sessUser = (object) [
+      $sessMember = (object) [
          'id' => $member->id,
          'name' => $member->name,
          'is_admin' => $member->is_admin,
       ];
-      Session::set('member', $sessUser);
+      Session::set('member', $sessMember);
       return Response::redirect('/');      
     }
     else {

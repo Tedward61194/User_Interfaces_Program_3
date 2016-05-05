@@ -39,7 +39,7 @@
         <table>
             <tr><td><input type="text" name="quantity" value="{input_post index='quantity' default=$quantity}" /></td>
                 <td><button type="submit" name="doit">Submit</button></td></tr>
-            <td><button type="submit" name="clear">Clear</button></td>
+            <td><button type="submit" name="clear" value="0">Clear</button></td>
             <br />
         <span class="error">{$validator->error_message('quantity')}</span>
         </table>

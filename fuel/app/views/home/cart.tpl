@@ -8,7 +8,6 @@
 
 {block name="content"}
 {$total = 0}
-
   <h2>My Cart</h2>
   <table>
       <tr>
@@ -31,5 +30,15 @@
           </tr>
       {/foreach}
       <tr><th>Total:</th><td>{$total}</td></tr>
-  </table>  
+      {if $session->get('member') and $session->get(member)->is_admin}
+        {form action="admin/allOrders" name='allOrders' method="post"}
+        <tr><td><input type='submit' name='allOrders' value ='Place Order'></td></tr>
+        {/form}
+      {/if}
+      {if $session->get('member') and !($session->get(member)->is_admin)}
+        {form action="member/myOrders" name='myOrders' method="post"}
+        <tr><td><input type='submit' name='myOrders' value ='Place Order'></td></tr>
+        {/form}
+      {/if}
+  </table>
 {/block}
