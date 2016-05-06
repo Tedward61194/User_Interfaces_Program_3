@@ -16,7 +16,7 @@
 
   <header>
     {asset_img refs="header.png"}
-    <span class="caption">{$session->get('user')->name|default}</span>
+    <span class="caption">{$session->get('member')->name|default}</span>
   </header>
     
   <nav>

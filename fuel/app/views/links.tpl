@@ -4,6 +4,9 @@
 {if $session->get('member') and $session->get(member)->is_admin}
     <li>{html_anchor href="/admin/allOrders" text="allOrders"}</li>
 {/if}
+{if $session->get('member') and !$session->get(member)->is_admin}
+    <li>{html_anchor href="/member/myOrders" text="myOrders"}</li>
+{/if}
 {if $session->get('member')}
     <li>{html_anchor href='/authenticate/logout' text='Logout'}</li>
 {else}

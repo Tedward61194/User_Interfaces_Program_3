@@ -19,11 +19,18 @@
 {/block}
 
 {block name="content"}
-    {$name}
+    <table>
     {foreach $baskets as $basket}
-        {$basket->member_id}
+        <tr>
+        <td>{html_anchor href="show/adminBasket/{$basket->id}" text="Order #{$basket->id}"}</td>
+            <td>Time: {$basket->made_on}</td>
+            {foreach $members as $member}
+                {if $member->id ==$basket->member_id}
+                    <td>Made by: {$member->name}</td>
+                {/if}
+            
+            {/foreach}
+        </tr>
     {/foreach}
-    {foreach $members as $member}
-        {$member->name}
-    {/foreach}
+    </table>
 {/block}

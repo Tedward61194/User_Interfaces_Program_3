@@ -19,38 +19,15 @@
 {/block}
 
 {block name="content"} 
+    <h1>My Orders</h1>
     <table>
     {foreach $baskets as $basket}
         {if $basket->member_id==$member_id}
             <tr>
-                <td>{html_anchor href="show/item/{$basket->id}" text="Order #{$basket->id}"}</td>
+                <td>{html_anchor href="show/myBasket/{$basket->id}" text="Order #{$basket->id}"}</td>
+                <td>Time: {$basket->made_on}</td>
             </tr>
         {/if}
     {/foreach}
     </table>
-    {*<br />
-    <h2>My Cart</h2>
-  <table>
-      <tr>
-          <th>Name</th>
-          <th>Price</th>
-          <th>Quantity</th>
-          <th>Sub Total</th>
-      </tr>
-      {foreach $cart_data as $index => $entry}
-          <tr>
-              {foreach $flowers as $cur_flower}
-              {if $cur_flower->id==$index && !$cart_data[$cur_flower->id]==null}
-                <td>{html_anchor href="/show/flower/{$cur_flower->id}" text="{$cur_flower->name}"}</td>
-                <td>{$cur_flower->price}</td>
-                <td>{$entry}</td>
-                <td>{$entry * $cur_flower->price}
-              {/if}
-              {/foreach}
-          </tr>
-        {/foreach}
-        
-        {foreach $items as $item}
-            {$item->price}
-        {/foreach} *}
 {/block}

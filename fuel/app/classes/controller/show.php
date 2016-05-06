@@ -19,8 +19,6 @@ class Controller_Show extends Controller_Base {
             ->add_rule('required')
             ->add_rule('valid_string', ['numeric'])
     ;
-    $doit = Input::post('doit');
-    $clear = Input::post('clear');
     $message = '';
     try {
         $validated = $validator->run(Input::post());
@@ -28,20 +26,12 @@ class Controller_Show extends Controller_Base {
             throw new Exception();
         }
         $validData = $validator->validated();
-        $item->quantity = $validData['quantity'];
-        $item->save();
         $cart_data = Session::get('cart');
         $cart_data[$flower_id] = $validData['quantity'];
         Session::set('cart', $cart_data);
         Response::redirect("/show/cart");
     } catch (Exception $ex) {
         $message = $ex->getMessage();
-        }
-    if (!is_null($clear)) {
-        Response::redirect("/show/cart");
-        //remove flower from cart
-    } else {
-        $cart_data[$flower_id] = 0;
     }
     $data = [
         'flower_id' => $flower_id,
@@ -55,9 +45,6 @@ class Controller_Show extends Controller_Base {
   }
 
   public function action_cart() {
-    //if (!(Session::get('member'))) {
-    //    Response::redirect("/authenticate/login");
-    //}
     $cart_data = Session::get('cart');
     $flowers = Model_Flower::find('all');
     $data = [
@@ -69,13 +56,42 @@ class Controller_Show extends Controller_Base {
         Response::redirect("/member/placeOrder");
         
     }
+    if (isset($_POST['Clear'])) {
+        $cart_data[$flower_id] = 0;
+        //Session::set('cart', []);
+        Response::redirect("member/placeOrder");
+    }
     return View::forge('home/cart.tpl', $data);
   }
   
-  public function action_item() {
-      $data = [
-          
-      ];
-      return View::forge('home/item.tpl', $data);
-  }
+    public function action_basket($basket_id) {
+        $basket = Model_Basket::find($basket_id);
+        $items = Model_Item::find('all');
+        $flowers = Model_Flower::find('all');
+        $data = [
+            'basket' => $basket,
+            'items' => $items,
+            'basket_id' => $basket_id,
+            'flowers' => $flowers,
+        ];
+        return View::forge('home/myBasket.tpl', $data);
+    }
+  
+    public function action_adminBasket($basket_id) {
+        $basket = Model_Basket::find($basket_id);
+        $items = Model_Item::find('all');
+        $flowers = Model_Flower::find('all');
+        $data = [
+            'basket' => $basket,
+            'items' => $items,
+            'basket_id' => $basket_id,
+             'flowers' => $flowers,
+        ];
+      
+        if (isset($_POST['processOrder'])) {
+            Session::set('basket', $basket);
+            Response::redirect("admin/processOrder");//, $basket_id);
+        }
+        return View::forge('home/adminBasket.tpl', $data);
+    }
 }
