@@ -1,4 +1,5 @@
 <?php
+// Teddy Segal
 
 class Controller_Show extends Controller_Base {
     
@@ -13,6 +14,7 @@ class Controller_Show extends Controller_Base {
   public function action_flower($flower_id) {
     $flower = Model_Flower::find($flower_id);
     $item = Model_Item::find($flower_id);
+    $member = Session::get('member');
     $validator = Validation::forge();
     $validator->add('quantity')
             ->add_rule('trim')
@@ -38,7 +40,19 @@ class Controller_Show extends Controller_Base {
         'flower' => $flower,
         'quantity' => Input::post('quantity'),
         'message' => $message,
+        'member' => $member,
     ];
+    
+    if(isset($_POST['clear'])) {
+        $cart_data = Session::set('cart', []);
+        Response::redirect("show/cart");
+    }
+    
+    if(isset($_POST['modify'])) {
+        Session::set('flower', $flower);
+        Response::redirect("admin/modify");
+  }
+    
     $view = View::forge('home/showFlower.tpl', $data);
     $view->set('validator', $validator, false);
     return $view;
@@ -52,14 +66,8 @@ class Controller_Show extends Controller_Base {
         'flowers' => $flowers,
     ];
     
-    if (isset($_POST['myOrders'])) {
-        Response::redirect("/member/placeOrder");
-        
-    }
-    if (isset($_POST['Clear'])) {
-        $cart_data[$flower_id] = 0;
-        //Session::set('cart', []);
-        Response::redirect("member/placeOrder");
+    if(isset($_POST['myOrders'])) {
+        Response::redirect("/member/placeOrder");    
     }
     return View::forge('home/cart.tpl', $data);
   }

@@ -1,3 +1,5 @@
+{*Teddy Segal*}
+
 {extends file="layout.tpl"}
 
 {block name="localstyle"}
@@ -35,6 +37,7 @@
         <br />
         <br />
         <b>Cart</b>
+        {if !$session->get('member') or !$session->get(member)->is_admin}
         {form}
         <table>
             <tr><td><input type="text" name="quantity" value="{input_post index='quantity' default=$quantity}" /></td>
@@ -44,6 +47,16 @@
         <span class="error">{$validator->error_message('quantity')}</span>
         </table>
         {/form}
+        {/if}
+        {if $session->get('member') and $session->get(member)->is_admin}
+        {form}
+        <table>
+            <tr><td><button type="submit" name="modify">Modify</button></td>
+                <td><button type="submit" name="clear" value="0">Clear</button></td></tr>
+            <br />
+        </table>
+        {/form}
+        {/if}
       </td>
     </tr>
   </table>

@@ -1,3 +1,5 @@
+{*Teddy Segal*}
+
 {extends file="layout.tpl"}
 
 {block name='localstyle'}

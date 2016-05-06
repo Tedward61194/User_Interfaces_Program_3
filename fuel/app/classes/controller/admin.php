@@ -1,4 +1,5 @@
 <?php
+// Teddy Segal
 
 class Controller_Admin extends Controller_Base {
     
@@ -110,5 +111,90 @@ class Controller_Admin extends Controller_Base {
             'member' => $member,
         ];
         return View::forge('home/orderProcessedFail.tpl', $data);
+    }
+    
+    public function action_addFlower() {
+        $validator = Validation::forge();
+        $message = "";
+
+        $validator->add('name', 'name') // field, label
+            ->add_rule('trim')
+            ->add_rule('required')
+            ->add_rule('valid_string', ['alpha', 'numeric', 'spaces', 'punctuation'])
+            ->add_rule('min_length', 3)
+        ;
+        $validator->add('price', 'price')
+            ->add_rule('trim')
+            ->add_rule('required')
+                ->add_rule('valid_string', ['numeric'])
+        ;
+        $validator->add('email', 'email')
+            ->add_rule('trim')
+            ->add_rule('required')
+            ->add_rule('valid_email')
+        ;
+    
+        // specifiy error messages to override rule defaults
+        $validator
+            ->set_message('required', ':label cannot be empty')
+            ->set_message('min_length', 'at least :param:1 char(s)')
+            ->set_message('valid_email', 'invalid email')
+        ;
+
+        // specify error messages per field to override other messages
+        $validator
+            ->field('price')
+            ->set_error_message('valid_string', 'must be non-negative integer')
+        ;
+        
+        if(isset($_POST['doit'])) {
+            $validated = $validator->run($_POST);
+            if ($validated) {
+                $validData = $validator->validated();
+                $message = var_export($validData, true);
+                Response::redirect('admin/addFlower/Reentrant');
+            }
+            
+        }
+        
+        $data = [
+            'name' => '',
+            'price' => '',
+            'description' => '',
+            'imagefile' => '',
+            'instock' => '',
+            'message' => $message,
+        ];
+        
+        $view = View::forge('home/addFlower.tpl', $data);
+        $view->set('validator', $validator, false);
+        return $view;
+    }
+    
+    public function action_addFlowerReentrant() {
+        echo "hi";
+        $data = [
+            
+        ];
+    }
+    
+    public function action_modify() {
+        $flower = Session::get('flower');
+        
+        $data = [
+            'flower' => $flower,
+        ];
+        
+        if(isset($_POST['modify'])) {
+            $flower->price = filter_input(INPUT_POST, 'price');
+            $flower->save();
+            Response::redirect('/');
+        }
+        
+        if(isset($_POST['cancel'])) {
+            Response::redirect('/');
+        }
+        
+        return View::forge('home/modify.tpl', $data);
     }
 }   

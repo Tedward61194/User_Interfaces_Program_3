@@ -1,4 +1,5 @@
 <?php
+// Teddy Segal
 
 class Controller_Authenticate extends Controller_Base {
 

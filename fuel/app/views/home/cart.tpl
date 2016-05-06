@@ -1,3 +1,5 @@
+{*Teddy Segal*}
+
 {extends file="layout.tpl"}
 
 {block name="localstyle"}
@@ -8,7 +10,11 @@
 
 {block name="content"}
 {$total = 0}
+
   <h2>My Cart</h2>
+  {if $cart_data == null}
+      Empty Cart
+  {else}
   <table>
       <tr>
           <th>Name</th>
@@ -41,4 +47,5 @@
         {/form}
       {/if}
   </table>
+  {/if}
 {/block}

@@ -1,22 +1,6 @@
-{extends file="layout.tpl"}
+{*Teddy Segal*}
 
-{block name="localstyle"}
-  <style type="text/css">
-    .showFlower {
-      margin-top: 20px;
-    }
-    .showFlower tr {
-      vertical-align: top;
-    }
-    .showFlower tr td:first-child {
-      padding-right: 10px;
-    }
-    img.flower {
-      width: 220px;
-      height: 220px;
-    }
-  </style>
-{/block}
+{extends file="layout.tpl"}
 
 {block name="content"}
 {$total = 0}
