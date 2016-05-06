@@ -21,6 +21,8 @@
 {block name="content"}
 {$total = 0}
     <h1>Order #{$basket->id}</h1>
+    Member: {$member->name}<br/>
+    Email: {$member->email}
     <hr/>
     <table>
         <tr>
@@ -28,6 +30,7 @@
             <th>Price</th>
             <th>Quantity</th>
             <th>Sub Total</th>
+            <th>In Stock</th>
         </tr>
     {foreach $items as $item}
         <tr>
@@ -35,11 +38,12 @@
                 {foreach $flowers as $flower}
                     {if $item->flower_id == $flower->id}
                         <td>{$flower->name}</td>
+                        <td>{$item->price}</td>
+                        <td>{$item->quantity}</td>
+                        <td>{($item->price)*($item->quantity)}</td>
+                        <td>{$flower->instock}</td>
                     {/if}
                 {/foreach}
-                <td>{$item->price}</td>
-                <td>{$item->quantity}</td>
-                <td>{($item->price)*($item->quantity)}</td>
                 {$total = $total + (($item->price)*($item->quantity))}
             {/if}
         </tr>

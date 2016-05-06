@@ -64,7 +64,7 @@ class Controller_Show extends Controller_Base {
     return View::forge('home/cart.tpl', $data);
   }
   
-    public function action_basket($basket_id) {
+    public function action_myBasket($basket_id) {
         $basket = Model_Basket::find($basket_id);
         $items = Model_Item::find('all');
         $flowers = Model_Flower::find('all');
@@ -79,18 +79,21 @@ class Controller_Show extends Controller_Base {
   
     public function action_adminBasket($basket_id) {
         $basket = Model_Basket::find($basket_id);
+        $member_id = $basket->member_id;
+        $member = Model_Member::find($member_id);
         $items = Model_Item::find('all');
         $flowers = Model_Flower::find('all');
         $data = [
             'basket' => $basket,
             'items' => $items,
             'basket_id' => $basket_id,
-             'flowers' => $flowers,
+            'flowers' => $flowers,
+            'member' => $member,
         ];
       
         if (isset($_POST['processOrder'])) {
             Session::set('basket', $basket);
-            Response::redirect("admin/processOrder");//, $basket_id);
+            Response::redirect("admin/processOrderConfirm");//, $basket_id);
         }
         return View::forge('home/adminBasket.tpl', $data);
     }

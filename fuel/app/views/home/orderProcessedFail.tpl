@@ -50,9 +50,6 @@
     {/foreach}
     <tr><th>Total:</th><td></td><td></td><td>{$total}</td></tr>
     <hr/>
-    {form action="admin/processOrder" name='processOrder' method="post"}
-    <tr><td><input type="submit" name='processOrder' value='Process Order'></td></tr>
-    <tr><td><strong style="color: red;">Press again to confirm delete</strong></td></tr>
+    <tr><td><strong style="color: red;">Cannot Process</strong></td></tr>
     </table>
-    {/form}
 {/block}
